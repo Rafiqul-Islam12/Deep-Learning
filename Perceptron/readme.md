@@ -162,8 +162,9 @@ Weight 2 (w2) = 0.47768***
 
 
 # ***Resources***
-- [***The Math Behind Perceptron***](https://www.linkedin.com/pulse/math-behind-perceptron-step-by-step-guide-neural-sharat-manikonda-lpp5c/)   
+- [***The Math Behind Perceptron***](https://www.linkedin.com/pulse/math-behind-perceptron-step-by-step-guide-neural-sharat-manikonda-lpp5c/)
+- [***Perceptron (ANN)***](https://medium.com/data-science-in-your-pocket/deep-learning-series-01-perceptron-ann-00eefdbbe3d0)   
 - [***The Intuition Behind Perceptron***](https://ninamaamary.medium.com/the-intuition-behind-perceptrons-a58a03b1b874)  
-- [***How Perceptrons Learn***](https://medium.com/data-science-in-your-pocket/deep-learning-series-01-perceptron-ann-00eefdbbe3d0)   
+- [***How Perceptrons Learn***](https://aa-nadim.medium.com/how-perceptrons-learn-intuition-and-edge-cases-24239c13af92)   
 
 
