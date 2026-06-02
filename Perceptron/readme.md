@@ -160,11 +160,33 @@ Weight 2 (w2) = 0.47768***
 ## ***Epoch-3***   
 <img src="https://github.com/Rafiqul-Islam12/Deep-Learning/blob/main/Perceptron/images/img11.png" width="600">   
 
+---
+# ***Why the Perceptron Fails at XOR***
+***The Core Problem is Not Linearly Separable.***  
+<img src="https://github.com/Rafiqul-Islam12/Deep-Learning/blob/main/Perceptron/images/img12.png" width="650">  
+***A perceptron computes: output = f(w1×x1 + w2×x2 + bias)  
+This is a LINEAR equation.  
+It can only draw:***  
+- ***a LINE    in 2D***  
+- ***a PLANE   in 3D***   
+- ***a HYPERPLANE in higher dimensions***   
 
+***XOR needs a BENT/CURVED boundary → impossible with one straight line.***  
+
+- ***AND Gate: Linearly separable → Perceptron ✓***   
+- ***OR Gate: Linearly separable → Perceptron ✓***   
+- ***XOR Gate: NOT linearly separable → Perceptron ✗***   
+- ***Fix for XOR: Stack layers → MLP → Deep Learning born***  
+
+---
 # ***Resources***
 - [***The Math Behind Perceptron***](https://www.linkedin.com/pulse/math-behind-perceptron-step-by-step-guide-neural-sharat-manikonda-lpp5c/)
 - [***Perceptron (ANN)***](https://medium.com/data-science-in-your-pocket/deep-learning-series-01-perceptron-ann-00eefdbbe3d0)   
 - [***The Intuition Behind Perceptron***](https://ninamaamary.medium.com/the-intuition-behind-perceptrons-a58a03b1b874)  
 - [***How Perceptrons Learn***](https://aa-nadim.medium.com/how-perceptrons-learn-intuition-and-edge-cases-24239c13af92)   
 
+---
+## ***Author***  
+***Md. Rafiqul Islam***  
+***CSE, CoU***   
 
