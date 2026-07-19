@@ -66,8 +66,105 @@ Negative value = Weak বা unnecessary feature***
 ---
 # ***Tyepes of Activation Function***
 
-## 1. ReLu
+## ***1. ReLU (Rectified Linear Unit)***   
+***এটি positive input হলে input-কে যেমন আছে তেমনই return করে, আর negative input হলে 0 return করে।***   
+***ReLU-এর Formula:***   
+***`               f(x)=max(0,x)                `***    
+***অর্থাৎ,   
+যদি value < 0 → 0  
+যদি value > 0 → একই থাকবে***    
+   
+- ***Range: [0, ∞)***  
+       
+***Before ReLU***   
+***`-3   2   5`***     
+***` 4  -2   1`***   
+***`-6   3   7`***  
 
+***After ReLU***   
+***`0   2   5`***   
+***`4   0   1`***   
+***`0   3   7`***     
 
+***কোথায় ব্যবহার হয়?***
+- ***CNN-এর Hidden Layer***   
+- ***Deep Neural Network-এর Hidden Layer***  
 
+***Advantages***  
+- ***Computationally Efficient***   
+  ***খুব সহজ function, তাই training দ্রুত হয়।***   
+- ***Non-Saturating Gradient***   
+  ***Vanishing Gradient problem অনেক কম হয়, তাই Deep Network সহজে train করা যায়।***   
+- ***Sparse Activation***   
+  ***Negative output 0 হয়ে যায়, ফলে অনেক neuron inactive থাকে। এতে computation কমে এবং model efficient হয়।***   
 
+***Disadvantages***  
+- ***Dying ReLU Problem***  
+  ***যদি কোনো neuron বারবার negative input পায়, তাহলে তার output সবসময় 0 হবে। তখন সেই neuron আর শেখে না (update হয় না), অর্থাৎ "dead" হয়ে যায়।***
+
+---
+## ***2. Sigmoid***    
+***Sigmoid হলো একটি Activation Function, যা input value-কে 0 থেকে 1 এর মধ্যে convert করে। তাই এটি probability হিসেবে output দেয় এবং Binary Classification-এ বেশি ব্যবহৃত হয়।   
+Formula:***   
+***`       σ(x)= 1 / 1 + e^−x       `***   
+   
+***Example   
+Input:***   
+***`        -5    0    5       `***   
+***Output:***    
+***`    0.006   0.5   0.993       `***    
+
+***অর্থাৎ,***       
+***বড় Negative → 0-এর কাছাকাছি***   
+***0 → 0.5***   
+***বড় Positive → 1-এর কাছাকাছি***   
+
+- ***Range: (0, 1)***   
+
+***কোথায় ব্যবহার হয়?***    
+- ***Binary Classification***   
+- ***Output Layer-এ Probability বের করার জন্য***   
+
+***Disadvantages***    
+- ***Vanishing Gradient Problem***  
+  ***যদি input খুব বড় positive বা বড় negative হয়, তাহলে output 1 বা 0-এর খুব কাছাকাছি চলে যায়। তখন gradient প্রায় 0 হয়ে যায়, ফলে weight update খুব কম হয় এবং model ধীরে শেখে।***  
+
+---
+## ***3. Softmax***  
+***Softmax হলো একটি Activation Function, যা Multi-class Classification-এ ব্যবহার করা হয়। এটি model-এর raw output (scores)-কে probability-তে convert করে।      
+সব class-এর probability-এর যোগফল (Sum) = 1 হয়।***       
+
+***Example***       
+***ধরো CNN একটি image দেখে ৩টি class-এর score দিল:***       
+***`Cat   = 2.0`***        
+***`Dog   = 5.0`***               
+***`Lion  = 1.0`***      
+
+***Softmax apply করার পর:***   
+***`Cat   = 0.05`***   
+***`Dog   = 0.90`***   
+***`Lion  = 0.05`***    
+
+***এখানে,   
+সব probability-এর যোগফল = 1    
+সবচেয়ে বেশি probability Dog (0.90), তাই prediction হবে Dog।***    
+
+- ***Range: [0, 1]***     
+
+***কোথায় ব্যবহার হয়?***    
+- ***Output Layer***    
+- ***Multi-class Classification***    
+
+***Disadvantages***   
+- ***Hidden Layer-এ ব্যবহার করা হয় না।***   
+- ***এটি computationally expensive, কারণ সব class-এর probability একসাথে calculate করতে হয়।***   
+- ***Outlier বা খুব বড় score-এর প্রতি sensitive হতে পারে, ফলে একটি class-এর probability অনেক বেশি হয়ে যেতে পারে।***   
+
+---
+# ***Resources***   
+- [***Activation Functions***](https://medium.com/@vishnuam/activation-functions-in-convolutional-neural-networks-cnn-b1114a1b9b4d)     
+
+---
+## ***Author***
+***MD RAFIQUL ISLAM   
+CSE, CoU***   
