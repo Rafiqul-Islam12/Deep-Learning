@@ -38,4 +38,3 @@ Cost কমে গেল।
 এই cycle চলে, যতক্ষণ না cost minimum-এর কাছাকাছি পৌঁছে।***   
 <img src="https://github.com/Rafiqul-Islam12/Deep-Learning/blob/main/Gradient%20Descent%20in%20Neural%20Networks/images/img5.svg" width=450>  
 
-# কীভাবে Neural Network তার weight ধীরে ধীরে update করে minimum cost-এ পৌঁছায়।
