@@ -1,4 +1,4 @@
-# Early Stopping in Neural Network (ভাইভা নোট)
+# Early Stopping in Neural Network
 
 ## Early Stopping কী?
 
@@ -36,7 +36,5 @@ Training চলার সময় দুই ধরনের Loss দেখা �
 - **Patience:** কতগুলো Epoch অপেক্ষা করবে উন্নতি না হলেও।
 
 ---
-
-## Viva Summary
-
-**Early Stopping is a regularization technique that monitors validation loss and stops training when the model stops improving, preventing overfitting and improving generalization.**
+## Early Stopping in Keras
+- [Early Stopping](https://keras.io/api/callbacks/early_stopping/)
