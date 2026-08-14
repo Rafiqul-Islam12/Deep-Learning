@@ -1,4 +1,20 @@
-# Deep-Learning
+# ***Deep-Learning***
+
+---
+# ***How to improve Neural Network Performance***
+
+***Overfitting***    
+- [***Dropout Layer***]()
+- [***Early Stopping***]()
+- [***Regularization***]()
+
+***Normalization***   
+- [***Data Scaling***]()
+- [***Batch Normalization***]()
+
+***Vanishing Gradient***  
+- [***Activation Function***]()
+- [***Weight Initialization***]()
 
 ---
 ## ***BASIC***
