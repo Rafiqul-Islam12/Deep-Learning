@@ -5,15 +5,15 @@
 
 ***Overfitting***    
 - [***Dropout Layer***](https://github.com/Rafiqul-Islam12/Deep-Learning/tree/main/Dropout%20Layers)  
-- [***Early Stopping***]()
+- [***Early Stopping***](https://github.com/Rafiqul-Islam12/Deep-Learning/tree/main/Early%20Stopping)  
 - [***Regularization***]()
 
 ***Normalization***   
-- [***Data Scaling***]()
-- [***Batch Normalization***]()
+- [***Data Scaling***](https://github.com/Rafiqul-Islam12/Deep-Learning/tree/main/Data%20Scaling)   
+- [***Batch Normalization***](https://github.com/Rafiqul-Islam12/Deep-Learning/tree/main/Batch%20Normalization)    
 
 ***Vanishing Gradient***  
-- [***Activation Function***]()
+- [***Activation Function***](https://github.com/Rafiqul-Islam12/Deep-Learning/tree/main/Activation%20Function)   
 - [***Weight Initialization***]()
 
 ---
